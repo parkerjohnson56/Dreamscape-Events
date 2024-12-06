@@ -1,0 +1,455 @@
+/* Reset body margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*nav area*/
+
+header {
+    text-align: center;
+    background-color: #132A13;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom:20px;
+    margin-top:-45px;
+  
+  
+}
+
+header h1 {
+    padding-bottom: 0px;
+    color: #90A955; 
+    font-family: "Pacifico", serif;
+    font-size:65px;
+    font-weight: lighter;
+    margin-bottom:10px;
+    
+}
+
+
+nav ul {
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+    gap: 120px; 
+    
+}
+
+nav ul li {
+    display: inline; 
+}
+
+nav a , li{
+    text-decoration: none; 
+    color: #fff; 
+    font-family: "Italiana", sans-serif;
+    font-size:25px;
+    transition: font-weight 0.2s ease-in-out, color 0.2s ease-in-out;
+
+}
+nav a:hover{
+    color:#3A3D19;
+    font-weight:bold;
+}
+
+
+/*hero image area*/
+.hero-content {
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), 
+    url("images/hero-image.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh;
+    width: 100%; 
+    margin-top:-65px;
+    background-attachment: fixed;
+}
+#hero h2, p{
+    text-align:center;
+}
+#hero h2{
+    padding-top:250px;
+    font-family: "Satisfy", cursive;
+    color:white;
+    font-size:65px;
+}
+#hero p{
+    margin-top:-50px;
+    color: #fff; 
+    font-family: "Italiana", sans-serif;
+    font-size:35px;
+}
+/*about us section*/
+#about{
+    background-color:#BCCA9B;
+    margin-top:-33px; 
+    padding-bottom:50px;
+    padding-top:20px;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom:-10px;
+    font-family: "Italiana", sans-serif;
+    font-weight:lighter;
+}
+
+/* Two-column layout */
+.about-content {
+    display: flex; 
+    align-items: center; 
+    gap: 30px; 
+}
+
+.about-text {
+    flex: 1; /* Allow the text to take up equal space as the image */
+    font-size: 23px;
+    line-height: 1.8;
+    color: #000; 
+    text-align: justify; 
+    margin-left:80px;
+    margin-top:-100px;
+   column-width:400px;
+   font-family: "Inter", sans-serif;
+}
+
+
+
+/* Image column */
+.about-content img {
+    flex: 1; /* Allow the image to take up one column */
+    height:750px;
+    border-radius: 50px; 
+   margin-right:80px;
+   margin-top:25px;
+  
+}
+
+/*packages section*/
+#packages {
+    background-color: #132A13;
+    padding-top: 10px;
+    height: 1000px;
+   
+    
+}
+
+#packages h2 {
+    text-align: center;
+    font-size: 65px;
+    font-family: "Italiana", sans-serif;
+    color: #90A955;
+    font-weight: lighter;
+    margin: 10px 0 -10px;
+}
+
+button {
+    all: unset;
+    transition: font-weight 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.package-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+    margin: 20px 0;
+    padding-bottom: 5px;
+    font-family: "Satisfy", cursive;
+    color: white;
+    font-size: 40px;
+}
+
+#packages button:hover {
+    color: #3A3D19;
+    text-decoration: underline;
+}
+
+/*package content section*/
+#package-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    background-color: #BCCA9B;
+    width: 1200px;
+    height: 610px;
+    justify-content: center;
+    margin: auto;
+    border-radius: 50px;
+    
+}
+#package-content ul li {
+    color: black; /* Set the color of the bullet points */
+}
+
+#package-content img {
+    flex: 1;
+    height: auto;
+    height: 600px;
+    width:400px;
+    border-radius: 25px;
+}
+
+#package-content .text-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    font-size:25px;
+    font-family: "Inter", sans-serif;
+}
+#package-content h3{
+    text-align:center;
+    font-size:50px;
+    font-family: "Italiana", sans-serif !important;
+    margin-top:-100px;
+font-weight:lighter;
+padding-top:30px;
+}
+/*fortune teller game*/
+
+#game {
+    background-color: #3A3D19;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: flex; 
+    justify-content: center;
+    gap: 40px; 
+    
+}
+
+#game-left, #game-right {
+    flex: 1; 
+    max-width: 500px;
+    padding: 20px;
+    color: white; 
+}
+
+#game-left h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: "Italiana", sans-serif !important;
+    font-weight:lighter;
+    font-size:50px;
+    text-align:center;
+    margin-top:-10px;
+    
+}
+#game-p1{
+    font-family: "Italiana", sans-serif !important;
+    font-size:30px;
+}
+#game-p2{
+    font-weight:bold;
+    font-size:20px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left:75px;
+    
+}
+#guess-input {
+    width: 50px; 
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    justify-content:center;
+    vertical-align: middle;
+}
+
+#guess-btn {
+    background-color: #132A13;
+    color: #ffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 26px;
+    cursor: pointer;
+    margin-left:210px;
+    border-radius:50px;
+    width:75px;
+    text-align:center;
+    margin-top:25px;
+}
+
+#guess-btn:hover {
+    background-color: #BCCA9B;
+  
+    
+}
+
+#fortune-output {
+    font-size: 18px;
+    line-height: 1.6;
+}
+#fortune-output{
+    font-family: "Italiana", sans-serif !important;
+    font-size:30px;
+    padding-top:85px;
+}
+#game-right{
+    margin-top:-80px;
+}
+
+
+/* Booking Section */
+#booking {
+    background-color: #BCCA9B;
+    padding: 40px;
+    font-family: "Italiana", sans-serif; 
+}
+
+#booking-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#booking-header h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #3A3D19;
+}
+
+#booking-header p {
+    font-size: 20px;
+    color: #3A3D19;
+}
+
+#booking-content {
+    display: flex; /* Enables two-column layout */
+    gap: 40px; 
+    justify-content: center;
+    align-items: flex-start; /* Aligns items to the top */
+}
+
+#booking-left, #booking-right {
+    flex: 1; 
+    max-width: 600px; 
+}
+
+#booking-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#booking-image {
+    max-width: 100%; 
+    border-radius: 10px;
+}
+
+#booking-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+#booking-right label {
+    font-weight: bold;
+    color: #3A3D19;
+    font-size:20px;
+}
+
+#booking-right input,
+#booking-right select,
+#booking-right textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #3A3D19;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#booking-right input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+    
+}
+
+#booking-right button {
+    background-color: #3A3D19;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+#booking-right button:hover {
+    background-color: #90A955;
+    color: #3A3D19;
+}
+
+.error-message{
+    font-size:15px;
+    color:red;
+    font-weight:bold;
+}
+/*footer*/
+footer{
+    background-color:#132A13;
+    color:white;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+
+/* Dark Mode */
+body.dark-mode header {
+    background-color: #0d1c0d;
+    color: #ffffff; 
+}
+body.dark-mode .hero-content{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero-image.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh;
+    width: 100%; 
+    margin-top:-65px;
+    background-attachment: fixed;;
+}
+body.dark-mode #about{
+    background-color:#535944;
+}
+body.dark-mode .about-text{
+    color:white;
+}
+body.dark-mode #packages{
+    background-color:#0d1c0d;
+}
+body.dark-mode #package-content {
+    background-color: #535944;
+    color: white;
+}
+body.dark-mode #package-content ul li{
+    background-color: #535944;
+    color: white; 
+}
+body.dark-mode #game{
+    background-color:#252710;
+}
+body.dark-mode #booking{
+    background-color:#535944;
+}
+body.dark-mode #booking,
+body.dark-mode #booking-header h2,
+body.dark-mode #booking-header p,
+body.dark-mode #booking-right label,
+body.dark-mode #booking-right input,
+body.dark-mode #booking-right select,
+body.dark-mode #booking-right textarea,
+body.dark-mode #booking-right button {
+    color: white; 
+}

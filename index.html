@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamscape Events</title>
+    <!--style sheet-->
+    <link rel="stylesheet" href="styles.css">
+    <!--pacifico font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sevillana&display=swap" rel="stylesheet">
+<!--italiana font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Italiana&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sevillana&display=swap" rel="stylesheet">
+<!--satisfy font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Italiana&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Sevillana&display=swap" rel="stylesheet">
+<!--inter font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Sevillana&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Dreamscape Events</h1>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#game">Game</a></li>
+                <li><button id="theme-toggle" class="theme-button">Toggle Mode</button></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Plan Your Dream Event</h2>
+            <p>Turning Dreams into Reality, One Event at a Time</p>
+        </div>
+      
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+       
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About Us</h2>
+            <p>
+                At Dreamscape Events, we believe that every celebration deserves to be as magical and unique as the people behind it. From intimate gatherings to grand affairs, our passion lies in crafting unforgettable moments that leave a lasting impression.
+            </p>
+            <p>
+                With a keen eye for detail and a flair for creativity, we transform your vision into a seamless and stunning event. Whether you're dreaming of a romantic wedding under the stars, a chic corporate gala, or a whimsical birthday bash, we bring your ideas to life with style, elegance, and a touch of enchantment.
+            </p>
+            <p>
+                Let us take the stress out of planning so you can focus on what truly matters—creating memories that will shine forever. At Dreamscape Events, your dreams are our inspiration.
+            </p>
+        </div>
+            <img src="images/about-us.jpg" alt="About Us Image" id="about-image">
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages">
+        <h2>Packages</h2>
+        <div class="package-buttons">
+            <!-- Buttons to Select Package -->
+            <button onclick="displayPackage('starter')">Starter Tier</button>
+            <button onclick="displayPackage('premium')">Premium Tier</button>
+            <button onclick="displayPackage('luxury')">Luxury Tier</button>
+        </div>
+        <!-- Dynamic Content Area -->
+        <div id="package-content">
+            <div class="text-content">
+                <h3>Starter Tier</h3>
+                <p id="product-description"><strong>Price:</strong> Starting at $3,500</p>
+                <p id="product-details">
+                    Perfect for intimate gatherings like birthdays, showers, or small parties. Includes expert planning and décor setup to make your event magical.
+                </p>
+                <ul>
+                    <li>Basic décor setup (fairy lights, table settings, and balloons).</li>
+                    <li>Catering coordination for light snacks or desserts (venue fees not included).</li>
+                    <li>Pre-selected playlist for ambiance.</li>
+                    <li>On-site event assistant for 4 hours.</li>
+                </ul>
+            </div>
+            <img src="images/starter-tier.jpeg" alt="Starter tier photo" class="package-img">
+        </div>
+    </section>
+
+    <!-- Fortune Teller Game Section -->
+    <section id="game">
+        <div id="game-left">
+        <h2>Fortune Teller</h2>
+        <p id="game-p1">Choose a number between 1 and 10 and let the stars guide you.</p>
+        <p id="game-p2">Enter a number between 1 and 10</p>
+        <input type="number" id="guess-input" min="1" max="10" placeholder="1-10">
+        <br>
+        <button id="guess-btn">Guess</button>
+    </div>
+    <div id="game-right">
+        <p id="fortune-output">
+            <!--winning message-->
+            <strong></strong><br>
+            <span>Your Number:</span> <span id="user-number"></span><br>
+            <span>Good Fortune Number:</span> <span id="fortune-number"></span>
+        </p>
+    </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking">
+        <div id="booking-header">
+            <h2>Booking</h2>
+            <p>We would love to hear from you and answer any questions you have. Send us a message to make your dream come true.</p>
+        </div>
+        <div id="booking-content">
+            <div id="booking-left">
+                <img src="images/booking.jpeg" alt="Booking Image" id="booking-image">
+            </div>
+            <div id="booking-right">
+                <form action="#" method="post">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Jane" >
+                    
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Doe" >
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="janedoe@gmai.com">
+                    
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="534-234-5423">
+                    
+                    <label for="package">Package of Interest:</label>
+                    <select id="package" name="package">
+                        <option value="starter">Starter Tier</option>
+                        <option value="premium">Premium Tier</option>
+                        <option value="luxury">Luxury Tier</option>
+                    </select>
+                    
+                    <label>Preferred Method of Contact:</label>
+                    <div class="radio-group">
+                    <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                    <label for="contact-phone">Phone</label>
+                    <input type="radio" id="contact-email" name="contact-method" value="email">
+                    <label for="contact-email">Email</label>
+                    </div>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Dreamscape Events. All Rights Reserved.  Parker Johnson</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
+
+
+<!--Sources for images-->
+<!--https://shadesofloveweddings.co.uk/wp-content/uploads/2021/11/image-95.png-->
+<!--https://v.pinimg.com.gslb.pinterest.com/ideas/garden-party-wedding-night/950334313347/-->
+<!--https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhl-XOr25uodqAwbREkflKtSTWGNMzv4tgej328AJP60nogeQHldR_v_7sJmWVMF307Dom3PfXDZrwYeBisKlOZEYl6aC281x3vOr0SIrLZNQ0G3xS0zcMLOzNSDaZPUDSmYrLdgpe44PI/s640/tumblr_lvhrcaFR1p1r0ebqvo1_1280.jpeg-->
+<!--https://es.pinterest.com/beccadannielle/dream-wedding/-->
+<!--https://www.pinterest.com/pin/844493672991104/-->
+<!--https://www.pinterest.com/pin/434949276529797287/-->
